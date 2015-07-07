@@ -45,7 +45,7 @@ def init(path, apps_path=None, no_procfile=False, no_backups=False,
 		update_config({"wheel_cache_dir":wheel_cache_dir}, bench=path)
 		prime_wheel_cache(bench=path)
 	if not frappe_path:
-		frappe_path = 'https://github.com/frappe/frappe.git'
+		frappe_path = 'https://github.com/indictranstech/phr-frappe.git'
 	get_app('frappe', frappe_path, branch=frappe_branch, bench=path)
 	if not no_procfile:
 		setup_procfile(bench=path)
